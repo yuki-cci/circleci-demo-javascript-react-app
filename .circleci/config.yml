@@ -1,6 +1,6 @@
 version: 2.1
 #workflow
-workflow
+workflow:
   test-deploy:
     jobs:
       - test
