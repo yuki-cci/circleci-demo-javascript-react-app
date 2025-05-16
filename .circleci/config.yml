@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: hello world
-          echo "hello world"
+          name: echo hello world
+          command: echo "hello world"
       - run:
           name: Install dependencies
           command: npm install
