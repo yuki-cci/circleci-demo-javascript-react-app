@@ -1,7 +1,7 @@
 version: 2.1
       
 jobs:
-  test:
+  my1stjob:
     docker:
       - image: cimg/node:14.13.0
     steps:
@@ -16,6 +16,6 @@ jobs:
           command: npm run test
 
 workflows:
-  test-deploy:
+  my-1st-workflow:
     jobs:
-      - test
+      - my1stjob
