@@ -1,9 +1,4 @@
 version: 2.1
-
-workflows:
-  test-deploy:
-    jobs:
-      - test
       
 jobs:
   test:
@@ -19,3 +14,8 @@ jobs:
       - run:
           name: Run Tests
           command: npm run test
+
+workflows:
+  test-deploy:
+    jobs:
+      - test
