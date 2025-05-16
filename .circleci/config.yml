@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run: 
-        echo "hello world"
+          echo "hello world"
       - run:
           name: Install dependencies
           command: npm install
